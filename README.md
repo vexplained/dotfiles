@@ -97,6 +97,12 @@ For nicer git log insert this:
 
 ```
 
+On WSL, use the credential manager of the Git for Windows installation:
+```bash
+git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/bi
+n/git-credential-manager.exe"
+```
+
 ## Author
 
 Inspire by Radley E. Sidwell-Lewis
