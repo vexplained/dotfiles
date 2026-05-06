@@ -63,9 +63,11 @@ fi
 
 ## Setting up bat
 
+Setting batcat as the manpager:
+For Ubuntu systems, add this to `.bashrc`:
 ```bash
-# Fancier man-pages
-echo export MANPAGER=\'batcat -l man -p\' >> .bashrc
+export MANPAGER="sh -c 'col -bx | batcat -l man -p'"
+export MANROFFOPT="-c"
 ```
 
 ## Usage
