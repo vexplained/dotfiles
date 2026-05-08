@@ -20,6 +20,9 @@ cd ~
 ```
 
 ```bash
+# HTTPS
+git clone --bare https://github.com/vexplained/dotfiles.git .dotfiles
+# SSH
 git clone --bare git@github.com:vexplained/dotfiles.git .dotfiles
 ```
 
