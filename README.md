@@ -55,7 +55,7 @@ dotfiles checkout
 Insert this into `.bashrc`:
 ```bash
 # load dotfiles if present
-if [[ -d "$HOME/.dotfiles" ]]
+if [[ -d "$HOME/.config" ]]
 then
     export CONFIGDIR="$HOME/.config"
 fi
