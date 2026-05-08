@@ -32,6 +32,8 @@ git clone --bare git@github.com:vexplained/dotfiles.git .dotfiles
 echo alias dotfiles=\'git --git-dir='$HOME'/.dotfiles --work-tree='$HOME'\' >> .bashrc
 ```
 
+This way, all git-specific files are stored in `.dotfiles`, but the working directory is `$HOME`.
+
 ```bash
 source ~/.bashrc
 ```
@@ -55,10 +57,10 @@ Insert this into `.bashrc`:
 # load dotfiles if present
 if [[ -d "$HOME/.dotfiles" ]]
 then
-    export DOTFILESDIR="$HOME/.dotfiles"
+    export CONFIGDIR="$HOME/.config"
 fi
 
-[ -f "${DOTFILESDIR}/aliasrc" ] && source "${DOTFILESDIR}/aliasrc"
+[ -f "${CONFIGDIR}/aliasrc" ] && source "${CONFIGDIR}/aliasrc"
 ```
 
 **Important:** Remove/comment out the lines creating *some more ls aliases* in `.bashrc`
