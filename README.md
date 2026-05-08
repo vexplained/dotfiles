@@ -60,7 +60,7 @@ then
     export CONFIGDIR="$HOME/.config"
 fi
 
-[ -f "${CONFIGDIR}/aliasrc" ] && source "${CONFIGDIR}/aliasrc"
+[ -f "${CONFIGDIR}/bash/aliasrc" ] && source "${CONFIGDIR}/bash/aliasrc"
 ```
 
 **Important:** Remove/comment out the lines creating *some more ls aliases* in `.bashrc`
